@@ -1,0 +1,60 @@
+/*
+ * UART.CONFG.h
+ *
+ *  Created on: Mar 3, 2023
+ *      Author: Omar Alaa
+ */
+
+#ifndef UART_CONFG_H_
+#define UART_CONFG_H_
+
+/*UART MODE SELECT
+ *
+ (by default asynchronous)
+ UART_MODE_Asynchronous
+ UART_MODE_Synchronous
+ */
+
+#define UART_MODE_SELECT   UART_MODE_Asynchronous
+
+/*UART BUAD RATE SELECT
+ *
+ UART_BAUD_RATE_2400
+ UART_BAUD_RATE_4800
+ UART_BAUD_RATE_9600
+ UART_BAUD_RATE_14400
+ */
+
+#define UART_BUAD_RATE_SELECT   UART_BAUD_RATE_9600
+
+//UART Parity SELECT
+/*
+ UART_PARITY_Disabled
+ UART_PARITY_Reserved
+ UART_PARITY_Even_Parity
+ UART_PARITY_odd_Parity
+*/
+
+#define UART_PARITY_SELECT   UART_PARITY_Disabled
+
+// UART STOP BIT SELECT
+/*
+UART_STOP_BIT_ONE
+UART_STOP_BIT_TWO
+*/
+
+#define  UART_STOP_BIT_SELECR  UART_STOP_BIT_ONE
+
+/* UART Character Size
+
+ UART_DATA_BITS_5
+ UART_DATA_BITS_6
+ UART_DATA_BITS_7
+ UART_DATA_BITS_8
+ UART_DATA_BITS_9
+*/
+
+#define     UART_CHARACTER_SIZE   UART_DATA_BITS_5
+
+
+#endif /* UART_CONFG_H_ */
